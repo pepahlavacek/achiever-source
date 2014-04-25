@@ -1,0 +1,22 @@
+<template name="nominationAdd">
+  <div id="lightbox-backdrop">
+    <div id="lightbox">
+      <i class="fa fa-times close"></i>
+      <div class="col-md-12">
+        <h1>Nominate {{user.profile.name}} for a badge</h1>
+        <form>
+          <fieldset>
+            <div class="form-group">
+              <label class="control-label">Reason:</label>
+              <input type="text" name="title" class="form-control field"/>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-primary">Nominate</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

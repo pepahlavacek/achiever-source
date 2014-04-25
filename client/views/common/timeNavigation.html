@@ -1,0 +1,12 @@
+<template name="timeNavigation">
+    {{#each weeksMenu}}
+    <li class="month">
+      <a href="/month/{{url}}">{{title}}</a>
+    </li>
+    {{#each weeks}}
+      <li>
+        <a href="/week/{{url}}">{{title}}</a>
+      </li>
+    {{/each}}
+    {{/each}}
+</template>

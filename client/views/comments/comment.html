@@ -1,0 +1,10 @@
+<template name="comment">
+  <div class="col-md-12 comment">
+    <div class="info">
+      {{>_userIcon author}}
+      <strong>{{author.name}}</strong>
+      <span title="{{formatTime created_at}}">{{fromNow created_at}}</span>
+    </div>
+    {{body}}
+  </div>
+</template>

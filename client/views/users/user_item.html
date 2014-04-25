@@ -1,0 +1,14 @@
+<template name="userItem">
+  <tr>
+    <td>{{>_userIcon profile}}</td>
+    <td><a href="/users/{{_id}}">{{profile.name}}</a></td>
+    {{#if isInRole 'admin,manager'}}<td>{{#if approved}}Approved{{else}}<a class="approve">Approve</a>{{/if}}</td>{{/if}}
+    <td>
+      {{#if isInRole 'admin,manager'}}
+        <a href="#" class="add-badge">Give Badge</a>
+      {{else}}
+        <a href="#" class="add-nomination">Nominate</a>
+      {{/if}}
+    </td>
+  </tr>
+</template>

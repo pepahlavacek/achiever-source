@@ -1,0 +1,60 @@
+<template name="userView">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{>_userIcon user.profile}} {{user.profile.name}}</h1>
+      </div>
+    </div>
+    {{#if isInRole 'admin,manager'}}
+    <div class="row">
+      <div class="col-md-12">
+        <h2>This week's nominations</h2>
+        {{> nominationsList}}
+      </div>
+    </div>
+    {{/if}}
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Stats</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Achievements</th>
+              <th>Badges Awarded</th>
+              <th>Likes received</th>
+              <th>Likes taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each stats}}
+              <tr>
+                <td>{{year}}/{{month}}</td>
+                <td>{{posts}}</td>
+                <td>{{badges}}</td>
+                <td>{{likes}}</td>
+                <td>{{likes_taken}}</td>
+              </tr>
+            {{/each}}
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="grey">
+    <div class="container">
+      <section class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="posts wall">
+            {{#each posts}}
+            {{> postItem}}
+            {{/each}}
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</template>

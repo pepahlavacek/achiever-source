@@ -1,0 +1,23 @@
+<template name="postItem">
+  <div class="post-wrapper {{team}} {{userId}}" data-team="{{team}}" data-date="{{created_at}}" data-title="{{title}}" data-author="{{userId}}" data-likes="{{likes}}">
+    <i class="fa fa-times delete"></i>
+    <article class="post">
+      <a class="profile" href="/users/{{userId}}">{{>_userIcon author}} {{author.name}}</a>
+      <div class="picture {{team}}">
+        <i class="fa {{teamIcon team}}"></i>
+      </div>
+      <div class="post-content">
+        <span class="team {{team}}">{{team}}</span>
+        <h1>{{title}}</h1>
+      </div>
+      <footer class="clearfix">
+       <div class="half like {{liked}}">
+         <i class="fa fa-heart"></i> <i class="fa fa-heart-o"></i> {{likes}}
+       </div>
+       <div class="half">
+         <i class="fa fa-comments"></i> {{commentsCount}}
+       </div>
+      </footer>
+    </article>
+  </div>
+</template>

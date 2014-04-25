@@ -1,0 +1,49 @@
+<template name="notifications">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fa fa-exclamation"></i>
+    <span>Notifications</span>
+    {{#if notificationCount}}
+    <span class="badge badge-inverse">{{notificationCount}}</span>
+    {{/if}}
+    <span><b class="caret"></b></span>
+  </a>
+  <ul class="notification dropdown-menu">
+    {{#if notificationCount}}
+      {{#each notifications}}
+        {{> notification}}
+      {{/each}}
+    {{else}}
+      <li><span>No Notifications</span></li>
+    {{/if}}
+  </ul>
+</template>
+
+<template name="notification">
+  <li>
+    <a href="#">
+      {{#if typeIs "add_badge"}}
+       <strong>{{item.profile.name}}</strong> got badge for <strong>{{item.title}}</strong>
+      {{else}}
+        <strong>{{author.profile.name}}</strong>
+
+        {{#if typeIs "like_post"}}
+          liked your achievement
+        {{/if}}
+
+        {{#if typeIs "add_post"}}
+          added achievement
+        {{/if}}
+
+        {{#if typeIs "add_comment"}}
+          commented on achievement
+        {{/if}}
+
+        {{#if typeIs "add_badge"}}
+        got badge
+        {{/if}}
+
+        <strong>{{item.title}}</strong>
+      {{/if}}
+    </a>
+  </li>
+</template>

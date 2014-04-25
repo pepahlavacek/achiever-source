@@ -1,0 +1,125 @@
+@mixin delete() {
+  .delete {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    @include transition( all 0.1s ease-out );
+    opacity: 0;
+    font-size: 14px;
+    z-index: 10;
+  }
+  &:hover .delete {
+    opacity: 1;
+  }
+}
+
+@mixin teamcolors() {
+  &.success {
+    color: #428bca;
+  }
+  &.product {
+    color: #5cb85c;
+  }
+  &.engineering {
+    color: #5bc0de;
+  }
+  &.sales {
+    color: #f0ad4e;
+  }
+  &.marketing {
+    color: #d9534f;
+  }
+  &.operations {
+    color: #E0C7A8;
+  }
+}
+
+
+
+@-moz-keyframes chute-spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes chute-spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(359deg); }
+}
+@-ms-keyframes chute-spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(359deg);}
+}
+@-o-keyframes chute-spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(359deg);}
+}
+@keyframes chute-spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(359deg);}
+}
+
+@mixin chute-spin($interval) {
+  -webkit-animation: chute-spin $interval linear infinite;
+  -moz-animation: chute-spin $interval linear infinite;
+  -ms-animation: chute-spin $interval linear infinite;
+  -o-animation: chute-spin $interval linear infinite;
+  animation: chute-spin $interval linear infinite;
+}
+
+@mixin chute-loadable($color: black, $position: "middle", $fixed: false) {
+// makes an element loadable.
+  &:before, &:after {
+    content: " ";
+    pointer-events: none;
+    display: block;
+    @if $fixed {
+      position: fixed;
+    } @else {
+      position: absolute;
+    }
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    @include opacity(0);
+    @include transition(opacity 1s ease-in-out);
+  }
+
+  @if $position == 'top' {
+    &:before, &:after {
+      margin: 10px auto;
+    }
+  } @else if $position == 'bottom' {
+    &:before, &:after  {
+      margin: auto auto 0px;
+    }
+  }
+
+  &:after {
+    @include border-radius(50%);
+    border-top: 2px solid $color;
+    border-bottom: 2px solid $color;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    @include chute-spin(1s);
+  }
+  &:before {
+    font-family: "chute-fontello";
+    content: "\e80a";
+    font-size: 50px;
+    color: $color;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  @include opacity(1.0);
+  @include transition(opacity 1s ease-in-out);
+
+  &:before, &:after {
+    @include opacity(1.0);
+  }
+}

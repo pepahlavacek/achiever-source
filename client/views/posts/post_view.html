@@ -1,0 +1,53 @@
+<template name="postView">
+  <div id="lightbox-backdrop">
+    <div id="lightbox">
+      <i class="fa fa-times close"></i>
+      {{#with post}}
+        <article class="post-view col-md-12">
+
+          <h1>{{title}}</h1>
+          <div class="author">
+            {{>_userIcon author}}
+            by <span class="name">{{author.name}}</span>
+            <span class="time" title="{{formatTime created_at}}">
+              {{fromNow created_at}}
+            </span>
+            in
+            <span class="team {{team}}">{{team}}</span>
+          </div>
+
+          {{{markdown description}}}
+
+          <div class="actions clearfix">
+            <div class="half like {{liked}}">
+              <i class="fa fa-heart"></i> <i class="fa fa-heart-o"></i> {{likes}}
+            </div>
+            <div class="half">
+              <i class="fa fa-comments"></i> {{commentsCount}}
+            </div>
+          </div>
+
+          <div class="media">
+            {{#each media}}
+            <div class="image">
+              <img src="{{url}}" />
+              <p class="caption">{{caption}}</p>
+            </div>
+            {{/each}}
+          </div>
+
+
+
+          <div class="comments">
+            <h2>Comments</h2>
+              {{> commentAdd}}
+              <hr />
+              {{#each comments}}
+                {{> comment}}
+              {{/each}}
+          </div>
+        </article>
+      {{/with}}
+    </div>
+  </div>
+</template>

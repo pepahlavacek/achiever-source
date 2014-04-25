@@ -1,0 +1,15 @@
+<template name="layout">
+  <div id="layout">
+    <div id="main">
+      {{> header}}
+      {{> errors}}
+      {{> yield}}
+
+      <footer id="footer">
+        <p>Made with <i class="fa fa-heart"></i> for Chute. &copy; 2013 <a href="http://github.com/pepahlavacek" target="_blank">Josef Hlavacek</a></p>
+      </footer>
+
+      {{> yield region='lightbox'}}
+    </div>
+  </div>
+</template>

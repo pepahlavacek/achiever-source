@@ -1,0 +1,10 @@
+<template name="nominationItem">
+  <div><strong>{{profile.name}}</strong> {{title}}</div>
+</template>
+
+<template name="nominationsList">
+  {{#each nominations}}
+    {{>nominationItem}}
+  {{/each}}
+</template>
+
