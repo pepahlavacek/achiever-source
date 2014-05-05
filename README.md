@@ -67,13 +67,13 @@ Demo je dostupné na http://achiever-demo.herokuapp.com
 
 Přihlašovací jména testovacích facebookových uživatelů:
 
-carol_xsdxxwb_zamoresen@tfbnw.net
-dave_yfwtoqy_lisen@tfbnw.net
-james_saxbdow_witzman@tfbnw.net
-carol_vpfaqpz_letuchy@tfbnw.net
+- carol_xsdxxwb_zamoresen@tfbnw.net
+- dave_yfwtoqy_lisen@tfbnw.net
+- james_saxbdow_witzman@tfbnw.net
+- carol_vpfaqpz_letuchy@tfbnw.net
 
 administrátor:
-admin_wgvoydu_adminovic@tfbnw.net
+- admin_wgvoydu_adminovic@tfbnw.net
 
 heslo pro všechny:
 achiever123
