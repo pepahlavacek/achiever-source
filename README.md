@@ -33,10 +33,11 @@ $ mrt
 $ meteor bundle chute-achiever.tgz
 # rozbalit bundle do složky
 $ tar -zxvf chute-achiever.tgz && rm chute-achiever.tgz
+# přesunout bundle do samostatné složky a vymazat původní složku
+$ mv bundle/* ../achiever-demo && rmdir bundle
 ```
 
-Obsah složky ```bundle``` přesunout do samostatného projektu a vymazat původní složku.
-Vymazat složku ```programs/server/node_modules/fibers```
+V novém projektu vymazat složku ```programs/server/node_modules/fibers```
 
 ##Demo
 
