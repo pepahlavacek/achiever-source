@@ -33,15 +33,49 @@ $ mrt
 $ meteor bundle chute-achiever.tgz
 # rozbalit bundle do složky
 $ tar -zxvf chute-achiever.tgz && rm chute-achiever.tgz
+# přesunout bundle do samostatné složky a vymazat původní složku
+$ mv bundle/* ../achiever-demo && rmdir bundle
 ```
 
-Obsah složky ```bundle``` přesunout do samostatného projektu a vymazat původní složku.
-Vymazat složku ```programs/server/node_modules/fibers```
+V novém projektu vymazat složku ```programs/server/node_modules/fibers```
+
+Přidat sobor package.json
+```js
+// package.json
+{
+  "name": "Achiever",
+  "version": "0.1.0",
+  "engines": {
+    "node": "0.10.26"
+  },
+  "dependencies": {
+    "fibers": "1.0.1"
+  }
+}
+```
+
+Přidat soubor Procfile
+```js
+// Procfile
+web: node main.js
+```
+
 
 ##Demo
 
 Demo je dostupné na http://achiever-demo.herokuapp.com
 
 Přihlašovací jména testovacích facebookových uživatelů:
+
+- carol_xsdxxwb_zamoresen@tfbnw.net
+- dave_yfwtoqy_lisen@tfbnw.net
+- james_saxbdow_witzman@tfbnw.net
+- carol_vpfaqpz_letuchy@tfbnw.net
+
+administrátor:
+- admin_wgvoydu_adminovic@tfbnw.net
+
+heslo pro všechny:
+achiever123
 
 
