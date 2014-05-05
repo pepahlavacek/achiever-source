@@ -26,18 +26,16 @@ $ mrt
 ```
 
 ##Deploy
-Pro deploy je potřeba
 
-vytvořit bundle:
 ```bash
+// vytvořit bundle
 $ meteor bundle chute-achiever.tgz
-```
-rozbalit ho
-```bash
+// rozbalit bundle do složky
 $ tar -zxvf chute-achiever.tgz && rm chute-achiever.tgz
 ```
 
-přesunout do samostatné složky a vymazat původní složku bundle.
+Obsah složky ```bundle``` přesunout do samostatného projektu a vymazat původní složku.
+Vymazat složku ```programs/server/node_modules/fibers```
 
 ##Demo
 
