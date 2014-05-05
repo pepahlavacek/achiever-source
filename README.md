@@ -18,22 +18,20 @@ $ npm install -g meteorite
 ##Instalace a spuštění aplikace
 Po naklonování aplikace ve složce achiever-source:
 ```bash
+# sledovat změny v scss souborech
 $ compass watch
-```
-
-```bash
-// instalace packages
+# instalace packages
 $ mrt install
-// spuštění aplikace
+# spuštění aplikace
 $ mrt
 ```
 
 ##Deploy
 
 ```bash
-// vytvořit bundle
+# vytvořit bundle
 $ meteor bundle chute-achiever.tgz
-// rozbalit bundle do složky
+# rozbalit bundle do složky
 $ tar -zxvf chute-achiever.tgz && rm chute-achiever.tgz
 ```
 
