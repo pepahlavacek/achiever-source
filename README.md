@@ -18,26 +18,25 @@ $ npm install -g meteorite
 ##Instalace a spuštění aplikace
 Po naklonování aplikace ve složce achiever-source:
 ```bash
+# sledovat změny v scss souborech
 $ compass watch
-```
-
-```bash
+# instalace packages
+$ mrt install
+# spuštění aplikace
 $ mrt
 ```
 
 ##Deploy
-Pro deploy je potřeba
 
-vytvořit bundle:
 ```bash
+# vytvořit bundle
 $ meteor bundle chute-achiever.tgz
-```
-rozbalit ho
-```bash
+# rozbalit bundle do složky
 $ tar -zxvf chute-achiever.tgz && rm chute-achiever.tgz
 ```
 
-přesunout do samostatné složky a vymazat původní složku bundle.
+Obsah složky ```bundle``` přesunout do samostatného projektu a vymazat původní složku.
+Vymazat složku ```programs/server/node_modules/fibers```
 
 ##Demo
 
