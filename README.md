@@ -39,6 +39,28 @@ $ mv bundle/* ../achiever-demo && rmdir bundle
 
 V novém projektu vymazat složku ```programs/server/node_modules/fibers```
 
+Přidat sobor package.json
+```js
+// package.json
+{
+  "name": "Achiever",
+  "version": "0.1.0",
+  "engines": {
+    "node": "0.10.26"
+  },
+  "dependencies": {
+    "fibers": "1.0.1"
+  }
+}
+```
+
+Přidat soubor Procfile
+```js
+// Procfile
+web: node main.js
+```
+
+
 ##Demo
 
 Demo je dostupné na http://achiever-demo.herokuapp.com
