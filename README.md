@@ -22,6 +22,9 @@ $ compass watch
 ```
 
 ```bash
+// instalace packages
+$ mrt install
+// spuštění aplikace
 $ mrt
 ```
 
