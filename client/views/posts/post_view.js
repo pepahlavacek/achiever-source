@@ -24,7 +24,10 @@ Template.postView.helpers({
     return Posts.findOne({_id: Session.get('currentPost')});
   },
   'markdown': function(text) {
-    return marked(text)
+    if(text) {
+      return marked(text)
+    }
+    return '';
   }
 });
 
