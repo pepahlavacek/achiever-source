@@ -1,6 +1,9 @@
 <template name="postItem">
   <div class="post-wrapper {{team}} {{userId}}" data-team="{{team}}" data-date="{{created_at}}" data-title="{{title}}" data-author="{{userId}}" data-likes="{{likes}}">
-    <i class="fa fa-times delete"></i>
+    {{#if canEdit}}
+      <i class="fa fa-times delete"></i>
+    {{/if}}
+
     <article class="post">
       <a class="profile" href="/users/{{userId}}">{{>_userIcon author}} {{author.name}}</a>
       <div class="picture {{team}}">

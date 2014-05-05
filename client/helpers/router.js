@@ -65,13 +65,31 @@ Router.map(function () {
       Session.set('currentPost', this.params._id);
     },
     waitOn: function() {
-      return [ Meteor.subscribe("posts"), Meteor.subscribe('post', Session.get('currentPost')) ];
+      return [ Meteor.subscribe('postsFromTo', Session.get('start'), Session.get('end')), Meteor.subscribe('post', Session.get('currentPost')) ];
     },
     data: function () {
       return Posts.findOne({_id: this.params._id});
     }
   });
 
+  // add post
+  this.route('post_edit', {
+    path: '/posts/:_id/edit',
+    controller: 'PostsListController',
+    loginRequired: 'login',
+    yieldTemplates: {
+      'postEdit': { to: 'lightbox' }
+    },
+    before: function() {
+      Session.set('currentPostEdit', this.params._id);
+    },
+    waitOn: function() {
+      return [ Meteor.subscribe('postsFromTo', Session.get('start'), Session.get('end')) ];
+    },
+    data: function () {
+      return Posts.findOne({_id: Session.get('currentPostEdit')});
+    }
+  });
 
   // list users
   this.route('users', {
@@ -99,7 +117,7 @@ mustBeAdmin = function(pause) {
 // check if the account is approved before singing in
 Router.onBeforeAction(function(pause) {
   var user = Meteor.user();
-  if(!_.isUndefined(user.approved)) {
+  if(user && !_.isUndefined(user.approved)) {
     if(!user.approved) {
       this.render('approvalPending');
       pause();

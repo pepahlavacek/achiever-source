@@ -8,18 +8,12 @@
 
           {{> afQuickField name="title"}}
           {{> afQuickField name="description" rows="5"}}
+          <p>Hey! You can use <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">this markup</a> to make tables and headlines!</p>
 
           <div class="form-group {{#if afFieldIsInvalid name='team'}}has-error{{/if}}">
             {{> afFieldLabel name="team"}}
-            {{#afFieldSelect name="team"}}
-              <option value="">-- select your team --</option>
-              <option value="success">Customer Success</option>
-              <option value="engineering">Engineering</option>
+            {{> afFieldInput name="team" options=teams}}
 
-              <option value="product">Product</option>
-              <option value="sales">Sales</option>
-              <option value="marketing">Marketing</option>
-            {{/afFieldSelect}}
 
             {{#if afFieldIsInvalid name="team"}}
               <span class="help-block">{{afFieldMessage name="team"}}</span>

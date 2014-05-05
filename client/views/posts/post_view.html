@@ -18,6 +18,12 @@
 
           {{{markdown description}}}
 
+          {{#if canEdit}}
+          <div class="pull-right edit-post">
+            <a href="/posts/{{_id}}/edit" class="btn btn-default">Edit Achievement</a>
+          </div>
+          {{/if}}
+
           <div class="actions clearfix">
             <div class="half like {{liked}}">
               <i class="fa fa-heart"></i> <i class="fa fa-heart-o"></i> {{likes}}

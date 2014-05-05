@@ -17,7 +17,8 @@
       "simple-schema": {},
       "autoform": {},
       "roles": {},
-      "sp-epic-editor": {}
+      "sp-epic-editor": {},
+      "reactive-publish": {}
     },
     "packages": {
       "iron-router": {
@@ -37,8 +38,8 @@
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
-        "tag": "v2.5.1",
-        "commit": "8c9bc5d3fc96705057737cb9743d555417f6e551"
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
       },
       "jquery-imagesloaded": {
         "git": "https://github.com/waltyuyu/meteor-jquery-imagesloaded.git",
@@ -67,8 +68,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.7.2",
-        "commit": "5d3265ab2607949ca776a45411ce11072413546d"
+        "tag": "v0.8.0",
+        "commit": "54a820a4a561e7f49d6fbc05d24b75c3d8d2e9be"
       },
       "roles": {
         "git": "https://github.com/alanning/meteor-roles.git",
@@ -80,6 +81,11 @@
         "tag": "v0.0.3",
         "commit": "1de330c49a955411d40647bdfdf6a3625c7447e6"
       },
+      "reactive-publish": {
+        "git": "https://github.com/Diggsey/meteor-reactive-publish.git",
+        "tag": "v0.1.6",
+        "commit": "dd8c149f109a1f3d1cac7e36293cf5904538ca90"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -89,6 +95,11 @@
         "git": "https://github.com/aldeed/meteor-collection2.git",
         "tag": "v0.3.11",
         "commit": "7e970671305657678e8508d8107d5e6c5e158559"
+      },
+      "server-deps": {
+        "git": "https://github.com/Diggsey/meteor-server-deps.git",
+        "tag": "v0.1.2",
+        "commit": "2db5d15fad9240723549cbbc5260a74b6b7e1c61"
       }
     }
   }
