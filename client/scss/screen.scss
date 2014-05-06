@@ -196,10 +196,11 @@ $gutter: 20px;
 
 #main {
   padding-top: 70px;
+  padding-bottom: 80px;
   background: #fff;
   @include transition(all 300ms ease-in-out);
   position: relative;
-  min-height: 700px;
+  min-height: 900px;
 }
 
 .menu-open {
@@ -374,10 +375,24 @@ $gutter: 20px;
       }
     }
   }
-  .notification li span {
-    color: $grey;
-    padding: 5px;
-    display: block;
+  .notification {
+    max-height: 400px;
+    overflow-y: auto;
+    .read-all {
+      color: $grey;
+      cursor: pointer;
+      text-align: right;
+    }
+    li span {
+      color: $grey;
+      padding: 5px;
+      display: block;
+    }
+    li a {
+      max-width: 400px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 .full {

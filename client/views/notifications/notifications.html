@@ -9,6 +9,7 @@
   </a>
   <ul class="notification dropdown-menu">
     {{#if notificationCount}}
+      <li><span class="read-all">Read all</span></li>
       {{#each notifications}}
         {{> notification}}
       {{/each}}

@@ -378,20 +378,21 @@ a {
 /* line 197, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 #main {
   padding-top: 70px;
+  padding-bottom: 80px;
   background: #fff;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   position: relative;
-  min-height: 700px;
+  min-height: 900px;
 }
 
-/* line 206, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 207, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .menu-open #menu {
   left: 0px;
 }
-/* line 209, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 210, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .menu-open #main {
   -webkit-transform: translate3d(250px, 0px, 0) scale(0.9);
   -moz-transform: translate3d(250px, 0px, 0) scale(0.9);
@@ -400,26 +401,26 @@ a {
   transform: translate3d(250px, 0px, 0) scale(0.9);
 }
 
-/* line 215, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 216, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-nav.user-block.navbar-nav.navbar-right:last-child {
   margin: 0px;
 }
-/* line 219, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 220, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-nav.user-block li {
   padding: 15px 10px;
 }
 
-/* line 224, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 225, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 #chute-chooser-bg {
   z-index: 10001 !important;
 }
 
-/* line 228, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 229, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .chute-chooser-open.chute-chooser {
   z-index: 10002 !important;
 }
 
-/* line 233, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 234, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .loading {
   position: fixed;
   top: 50%;
@@ -490,13 +491,13 @@ a {
   opacity: 1;
 }
 
-/* line 247, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 248, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 #layout {
   min-height: 100%;
   display: block;
 }
 
-/* line 253, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 254, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute {
   background: #34363a;
   min-height: 70px;
@@ -505,29 +506,29 @@ a {
   min-width: 600px;
 }
 @media (max-width: 780px) {
-  /* line 253, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 254, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute {
     min-width: 280px;
   }
 }
-/* line 262, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 263, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu {
   height: 70px;
 }
 @media (max-width: 780px) {
-  /* line 262, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 263, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu {
     margin: 0;
     float: left;
   }
 }
 @media (max-width: 780px) {
-  /* line 268, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 269, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu > li.logo {
     width: 70px;
   }
 }
-/* line 272, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 273, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu > li.logo > a, .navbar-chute ul.menu > li.logo > a:hover {
   width: 70px;
   height: 100%;
@@ -537,17 +538,17 @@ a {
   border: 0;
 }
 @media (max-width: 780px) {
-  /* line 272, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 273, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu > li.logo > a, .navbar-chute ul.menu > li.logo > a:hover {
     width: 70px;
   }
 }
-/* line 286, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 287, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu > li {
   height: 70px;
 }
 @media (max-width: 780px) {
-  /* line 286, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 287, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu > li {
     display: block;
     float: left;
@@ -555,7 +556,7 @@ a {
     text-align: center;
   }
 }
-/* line 294, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 295, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu > li > a {
   color: rgba(255, 255, 255, 0.25);
   display: block;
@@ -563,29 +564,29 @@ a {
   padding: 15px 10px 0px;
   height: 100%;
 }
-/* line 301, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 302, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu > li > a:hover, .navbar-chute ul.menu > li > a:focus {
   color: #fff;
   border-bottom: 5px solid #60b6d2;
   background: inherit;
 }
 @media (max-width: 780px) {
-  /* line 308, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 309, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu > li > a span {
     display: none;
   }
-  /* line 311, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 312, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu > li > a span.badge {
     display: block;
   }
 }
-/* line 317, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 318, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu > li > a i {
   font-size: 1.6em;
   display: block;
   margin-bottom: 5px;
 }
-/* line 324, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 325, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute ul.menu > li.page-title {
   display: table-cell;
   vertical-align: middle;
@@ -598,35 +599,35 @@ a {
   border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 @media (max-width: 780px) {
-  /* line 324, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 325, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute ul.menu > li.page-title {
     display: none;
   }
 }
-/* line 343, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 344, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute .nav .open > a {
   color: #fff;
   background-color: inherit;
   border-bottom: 5px solid #60b6d2;
 }
 @media (max-width: 780px) {
-  /* line 348, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 349, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute .navbar-nav.user-block {
     float: right;
   }
 }
-/* line 353, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 354, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute .navbar-nav.user-block li {
   padding: 0 10px;
   line-height: 70px;
 }
 @media (max-width: 780px) {
-  /* line 357, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+  /* line 358, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
   .navbar-chute .navbar-nav.user-block li.name {
     display: none;
   }
 }
-/* line 363, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 364, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute .navbar-nav.user-block li a {
   padding: 0 10px;
   line-height: 70px;
@@ -635,19 +636,36 @@ a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
 }
-/* line 371, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 372, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute .navbar-nav.user-block li a:hover {
   color: #fff;
   background: transparent;
 }
-/* line 377, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 378, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+.navbar-chute .notification {
+  max-height: 400px;
+  overflow-y: auto;
+}
+/* line 381, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+.navbar-chute .notification .read-all {
+  color: #34363a;
+  cursor: pointer;
+  text-align: right;
+}
+/* line 386, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .navbar-chute .notification li span {
   color: #34363a;
   padding: 5px;
   display: block;
 }
+/* line 391, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+.navbar-chute .notification li a {
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-/* line 383, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 398, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .full {
   height: 100%;
   width: 100%;
@@ -659,7 +677,7 @@ a {
   padding-top: 50px;
 }
 
-/* line 393, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 408, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .logo-big {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -672,23 +690,23 @@ a {
   border: 6px solid #fff;
   margin: 0 auto;
 }
-/* line 400, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 415, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 .logo-big img {
   height: 60px;
   margin: 0 auto;
 }
 
-/* line 405, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 420, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 #sign-in-facebook {
   margin-top: 20px;
   background-color: #3b5999;
   border-color: #3c5a9b;
 }
-/* line 409, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 424, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 #sign-in-facebook i {
   margin-right: 10px;
 }
-/* line 412, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
+/* line 427, /Users/pepahlavacek/Documents/www/achiever/client/scss/screen.scss */
 #sign-in-facebook:hover {
   background-color: #3e5da0;
   color: #fff;
@@ -815,19 +833,38 @@ a {
   border-bottom: 1px solid #e0e0e0;
   padding: 10px;
   font-size: 11px;
+  position: relative;
 }
-/* line 42, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 43, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .comments .comment .info {
   height: 20px;
   line-height: 20px;
   margin-bottom: 5px;
 }
-/* line 46, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 47, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .comments .comment .info img {
   width: 20px;
   height: 20px;
 }
-/* line 54, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 2, /Users/pepahlavacek/Documents/www/achiever/client/scss/_mixins.scss */
+.post-view .comments .comment .delete {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  opacity: 0;
+  font-size: 14px;
+  z-index: 10;
+}
+/* line 12, /Users/pepahlavacek/Documents/www/achiever/client/scss/_mixins.scss */
+.post-view .comments .comment:hover .delete {
+  opacity: 1;
+}
+/* line 57, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .actions {
   clear: both;
   width: 100%;
@@ -836,7 +873,7 @@ a {
   height: 40px;
   line-height: 40px;
 }
-/* line 61, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 64, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .actions div {
   width: 100px;
   float: left;
@@ -845,69 +882,69 @@ a {
   text-align: left;
   cursor: pointer;
 }
-/* line 68, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 71, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .actions div i {
   font-size: 30px;
 }
-/* line 71, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 74, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .actions div .fa-heart {
   display: none;
 }
-/* line 75, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 78, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .actions div.liked .fa-heart {
   display: inline-block;
 }
-/* line 78, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 81, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view .actions div.liked .fa-heart-o {
   display: none;
 }
-/* line 85, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 88, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view table {
   width: 100%;
   line-height: 1.5em;
   border: 1px solid #eee;
 }
-/* line 90, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 93, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .post-view table td, .post-view table th {
   border: 1px solid #eee;
   padding: 5px;
 }
 
-/* line 101, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 104, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper.filter-hidden, .posts.wall .post-wrapper.filter-hidden {
   display: none;
 }
-/* line 105, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 108, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post h1, .posts.list .post-wrapper .post .picture, .posts.wall .post-wrapper .post h1, .posts.wall .post-wrapper .post .picture {
   cursor: pointer;
 }
-/* line 108, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 111, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .profile, .posts.wall .post-wrapper .post .profile {
   display: block;
 }
-/* line 110, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 113, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .profile img, .posts.wall .post-wrapper .post .profile img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-/* line 116, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 119, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post footer .like, .posts.wall .post-wrapper .post footer .like {
   cursor: pointer;
 }
-/* line 118, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 121, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post footer .like .fa-heart, .posts.wall .post-wrapper .post footer .like .fa-heart {
   display: none;
 }
-/* line 122, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 125, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post footer .like.liked .fa-heart, .posts.wall .post-wrapper .post footer .like.liked .fa-heart {
   display: inline-block;
 }
-/* line 125, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 128, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post footer .like.liked .fa-heart-o, .posts.wall .post-wrapper .post footer .like.liked .fa-heart-o {
   display: none;
 }
-/* line 130, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 133, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .team, .posts.wall .post-wrapper .post .team {
   display: block;
   margin-bottom: 5px;
@@ -939,7 +976,7 @@ a {
 .posts.list .post-wrapper .post .team.operations, .posts.wall .post-wrapper .post .team.operations {
   color: #E0C7A8;
 }
-/* line 143, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 146, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper {
   display: inline-block;
   position: relative;
@@ -960,22 +997,22 @@ a {
   box-shadow: 1px 1px 2px 0 #d0d0d0;
 }
 @media (max-width: 780px) {
-  /* line 143, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+  /* line 146, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
   .posts.wall .post-wrapper {
     width: 50%;
   }
 }
 @media (max-width: 480px) {
-  /* line 143, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+  /* line 146, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
   .posts.wall .post-wrapper {
     width: 100%;
   }
 }
-/* line 163, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 166, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper a {
   color: #333;
 }
-/* line 165, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 168, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper a:hover {
   text-decoration: none;
 }
@@ -997,29 +1034,29 @@ a {
 .posts.wall .post-wrapper:hover .delete {
   opacity: 1;
 }
-/* line 171, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 174, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper.loaded {
   opacity: 1;
 }
-/* line 175, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 178, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post {
   padding: 0;
 }
-/* line 177, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 180, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .profile {
   padding: 15px;
 }
-/* line 180, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 183, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post img {
   width: 100%;
   cursor: pointer;
 }
-/* line 184, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 187, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .picture {
   text-align: center;
   min-height: 150px;
 }
-/* line 187, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 190, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .picture i {
   font-size: 70px;
   line-height: 150px;
@@ -1048,11 +1085,11 @@ a {
 .posts.wall .post-wrapper .post .picture.operations {
   color: #E0C7A8;
 }
-/* line 193, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 196, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .post-content {
   padding: 12px 15px 20px;
 }
-/* line 196, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 199, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .post-content h1 {
   font-size: 22px;
   margin-top: 0px;
@@ -1060,17 +1097,17 @@ a {
   overflow: hidden;
   height: 50px;
 }
-/* line 203, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 206, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .post-content .author {
   position: absolute;
   top: 10px;
   left: 10px;
 }
-/* line 207, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 210, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post .post-content .author img {
   height: 40px;
 }
-/* line 213, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 216, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post footer {
   clear: both;
   width: 100%;
@@ -1079,7 +1116,7 @@ a {
   height: 50px;
   line-height: 50px;
 }
-/* line 220, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 223, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post footer div {
   width: 50%;
   float: left;
@@ -1087,12 +1124,12 @@ a {
   padding: 0 20px;
   text-align: left;
 }
-/* line 226, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 229, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.wall .post-wrapper .post footer div i {
   font-size: 30px;
   cursor: pointer;
 }
-/* line 236, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 239, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper {
   height: 70px;
   display: block;
@@ -1102,18 +1139,18 @@ a {
   position: relative;
 }
 @media (max-width: 480px) {
-  /* line 236, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+  /* line 239, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
   .posts.list .post-wrapper {
     height: auto;
     min-height: 70px;
   }
 }
-/* line 249, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 252, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .picture {
   float: left;
   padding: 0 20px;
 }
-/* line 252, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 255, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .picture i {
   line-height: 70px;
 }
@@ -1141,11 +1178,11 @@ a {
 .posts.list .post-wrapper .picture.operations {
   color: #E0C7A8;
 }
-/* line 259, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 262, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper img {
   display: none;
 }
-/* line 263, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 266, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper > i {
   float: right;
   position: absolute;
@@ -1154,12 +1191,12 @@ a {
   margin-top: -10px;
   font-size: 15px;
 }
-/* line 271, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 274, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post {
   height: 100%;
   overflow: hidden;
 }
-/* line 275, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 278, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .profile {
   position: absolute;
   right: 200px;
@@ -1172,30 +1209,30 @@ a {
   word-break: break-all;
   display: block;
 }
-/* line 287, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 290, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .profile img {
   display: inline-block;
 }
 @media (max-width: 480px) {
-  /* line 275, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+  /* line 278, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
   .posts.list .post-wrapper .post .profile {
     position: relative;
     top: 0;
     right: 0;
   }
 }
-/* line 297, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 300, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .post-content {
   width: 50%;
   display: inline-block;
   padding-top: 15px;
 }
-/* line 302, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 305, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .post-content span.team {
   line-height: 15px;
   margin: 0;
 }
-/* line 306, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 309, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post .post-content h1 {
   font-size: 17px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -1204,7 +1241,7 @@ a {
   margin: 0;
   padding: 0;
 }
-/* line 317, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 320, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post footer {
   display: inline-block;
   height: 100%;
@@ -1212,7 +1249,7 @@ a {
   line-height: 70px;
   padding-right: 20px;
 }
-/* line 324, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 327, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .posts.list .post-wrapper .post footer div {
   display: inline-block;
   height: 100%;
@@ -1220,12 +1257,12 @@ a {
   margin-right: 15px;
 }
 
-/* line 337, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 340, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week {
   border: 0;
   background: transparent;
 }
-/* line 340, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 343, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week > .btn {
   border: 1px solid #fff;
   background: transparent;
@@ -1234,30 +1271,30 @@ a {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
-/* line 345, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 348, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week > .btn:hover {
   border: 1px solid #eee;
 }
-/* line 349, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 352, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week.open > .btn {
   background: transparent;
 }
-/* line 353, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 356, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week h1 {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 357, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 360, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week i {
   font-size: 30px;
 }
-/* line 361, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 364, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week .month a {
   font-weight: bold;
   background: #34363a;
   color: #fff;
 }
-/* line 365, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
+/* line 368, /Users/pepahlavacek/Documents/www/achiever/client/scss/_posts.scss */
 .select-week .month a:hover {
   background: #404347;
   color: #fff;

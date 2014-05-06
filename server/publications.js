@@ -11,7 +11,7 @@ checkUserApproved = function(id) {
   }
 }
 Meteor.publish('users', function(id) {
-  return Meteor.users.find({}, { fields: { profile: 1, approved: 1, createdAt: 1 }});
+  return Meteor.users.find({}, { fields: { profile: 1, approved: 1, createdAt: 1, roles: 1 }});
 });
 
 Meteor.publish('user', function(id) {

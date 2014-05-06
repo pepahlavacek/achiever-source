@@ -4,11 +4,28 @@
     <td><a href="/users/{{_id}}">{{profile.name}}</a></td>
     {{#if isInRole 'admin,manager'}}<td>{{#if approved}}Approved{{else}}<a class="approve">Approve</a>{{/if}}</td>{{/if}}
     <td>
-      {{#if isInRole 'admin,manager'}}
-        <a href="#" class="add-badge">Give Badge</a>
+      <a href="#" class="add-nomination">Nominate</a>
+    </td>
+    {{#if isInRole 'admin,manager'}}
+    <td>
+      <a href="#" class="add-badge">Give Badge</a>
+    </td>
+    <td>{{roles}}</td>
+    {{/if}}
+    {{#if isInRole 'admin'}}
+    <td>
+      {{#if hasRole 'admin'}}
+        <a href="#" class="revoke-admin">Revoke Admin</a>
       {{else}}
-        <a href="#" class="add-nomination">Nominate</a>
+        <a href="#" class="make-admin">Make Admin</a>
+      {{/if}}
+      |
+      {{#if hasRole 'manager'}}
+      <a href="#" class="revoke-manager">Revoke Manager</a>
+      {{else}}
+      <a href="#" class="make-manager">Make Manager</a>
       {{/if}}
     </td>
+    {{/if}}
   </tr>
 </template>

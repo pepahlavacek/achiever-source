@@ -9,7 +9,25 @@ Meteor.methods({
     return Meteor.users.update({ _id: userId}, { $set: { approved: true, approved_at: new Date().getTime() }});
   },
   makeAdmin: function(userId) {
-    Roles.addUsersToRoles(userId, ['admin']);
+    if(Roles.userIsInRole(Meteor.userId(), 'admin')) {
+      Roles.addUsersToRoles(userId, 'admin');
+    }
+  },
+  makeManager: function(userId) {
+    console.log(Meteor.userId());
+    if(Roles.userIsInRole(Meteor.userId(), 'admin')) {
+      Roles.addUsersToRoles(userId, 'manager');
+    }
+  },
+  revokeAdmin: function(userId) {
+    if(Roles.userIsInRole(Meteor.userId(), 'admin')) {
+      Roles.removeUsersFromRoles(userId, 'admin');
+    }
+  },
+  revokeManager: function(userId) {
+    if(Roles.userIsInRole(Meteor.userId(), 'admin')) {
+      Roles.removeUsersFromRoles(userId, 'manager');
+    }
   }
 });
 

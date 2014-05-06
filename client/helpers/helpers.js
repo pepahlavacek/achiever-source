@@ -27,20 +27,21 @@ UI.registerHelper("teams", function() {
     { label: "Product", value: 'product' },
     { label: "Sales", value: 'sales' },
     { label: "Marketing", value: 'marketing' },
-    { label: "Operations", value: 'operations' }
+    { label: "Operations", value: 'operations' },
+    { label: "Studio", value: 'studio' }
   ];
 });
 
 UI.registerHelper('isSelected', function(a, b) {
-  console.log(this, a, b)
   return (a === b) ? ' selected' : '';
 });
 
 
 UI.registerHelper("canEdit", function() {
-  if(this.userId === Meteor.userId()) {
+  if(this.userId === Meteor.userId() || Roles.userIsInRole(Meteor.userId(), 'admin')) {
     return true;
   } else {
     return false;
   }
 });
+

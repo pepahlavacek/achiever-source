@@ -10,12 +10,14 @@
                 <th class="col-md-1"></th>
                 <th>Name</th>
                 {{#if isInRole 'admin,manager'}}<th>Approved</th>{{/if}}
+                <th>Nominate</th>
                 {{#if isInRole 'admin,manager'}}
                   <th>Badge</th>
-                {{else}}
-                  <th>Nominate</th>
+                  <th>Roles</th>
                 {{/if}}
-
+                {{#if isInRole 'admin'}}
+                  <th>Options</th>
+                {{/if}}
               </tr>
             </thead>
             {{#each users}}

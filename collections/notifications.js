@@ -29,3 +29,9 @@ createNotification = function(postId, type, subscribers, item) {
     created_at: new Date().getTime()
   });
 };
+
+Meteor.methods({
+  readAllNotifications: function() {
+    Notifications.update({ notSeen: Meteor.userId() }, { $pull: { notSeen: Meteor.userId() } }, { multi: true });
+  }
+});

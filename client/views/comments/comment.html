@@ -1,5 +1,8 @@
 <template name="comment">
   <div class="col-md-12 comment">
+    {{#if canEdit}}
+      <i class="fa fa-times delete"></i>
+    {{/if}}
     <div class="info">
       {{>_userIcon author}}
       <strong>{{author.name}}</strong>
